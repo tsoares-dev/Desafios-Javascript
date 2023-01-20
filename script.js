@@ -8,16 +8,20 @@
 // ]
 // Escreva uma função escada que utilize uma altura (um número) e retorne um array que represente a escada correspondente. Não esqueça que o espaço " " faz parte da resposta.
 
-// alert("Teste")
+
+// var lista = [];
+
 // function escada(altura){
-//   var lista = [4];
+
+//   altura = parseInt(prompt("Digite quantos degraus sua escada terá: "));
+
 //   for(var i = 1; i <= altura; i++){
-//     var espaco = altura - i;
-//     lista.push(" ".repeat(espaco) + "#".repeat(i));
+//     espaco = altura - i;
+//     lista.push("#".repeat(i)+ "\n");
 //   }
-//   alert(lista)
-//   // return lista;
+//   return lista;
 // }
+// alert(escada())
 
 
 // ######################### Desafio 02: Árvore Utópica ######################################
@@ -55,29 +59,28 @@
 
 // Por exemplo, maisMenos([1, 2, 0, -1]) deveria retornar[0.5, 0.25, 0.25], devido a que há 50 % de positivos, 25 % de zeros, e 25 % de negativos.
 
-// alert("teste")
-var resultado = [];
-function maisMenos(arrayEntrada){
-	let nPositivo = 0;
-	let nZero = 0;
-	let nNegativo = 0;
+// var resultado = [];
+// function maisMenos(arrayEntrada){
+// 	var nPositivo = 0;
+// 	var nZero = 0;
+// 	var nNegativo = 0;
 	
-	for(let i = 0; i < arrayEntrada.length; i++){
-		if(arrayEntrada[i] < 0)
-			nNegativo++;
+// 	for(let i = 0; i < arrayEntrada.length; i++){
+// 		if(arrayEntrada[i] < 0)
+// 			nNegativo++;
 			
-		else if(arrayEntrada[i] == 0)
-			nZero++;
+// 		else if(arrayEntrada[i] == 0)
+// 			nZero++;
 			
-		else
-			nPositivo++;
-	}
-	resultado[0] = nPositivo / arrayEntrada.length;
-	resultado[1] = nZero / arrayEntrada.length;
-	resultado[2] = nNegativo / arrayEntrada.length;
-	return resultado;
-}
-alert(maisMenos([1, 2, 0, -1]));
+// 		else
+// 			nPositivo++;
+// 	}
+// 	resultado[0] = nPositivo / arrayEntrada.length;
+// 	resultado[1] = nZero / arrayEntrada.length;
+// 	resultado[2] = nNegativo / arrayEntrada.length;
+// 	return resultado;
+// }
+// alert(maisMenos([1, 2, 0, -1])); //ex dado
 
 
 // ############################## Desafio 04: Produto ########################
