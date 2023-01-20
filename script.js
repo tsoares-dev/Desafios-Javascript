@@ -8,20 +8,18 @@
 // ]
 // Escreva uma função escada que utilize uma altura (um número) e retorne um array que represente a escada correspondente. Não esqueça que o espaço " " faz parte da resposta.
 
+var lista = [];
+function escada(altura){
 
-// var lista = [];
+  altura = parseInt(prompt("Digite quantos degraus sua escada terá: "));
 
-// function escada(altura){
-
-//   altura = parseInt(prompt("Digite quantos degraus sua escada terá: "));
-
-//   for(var i = 1; i <= altura; i++){
-//     espaco = altura - i;
-//     lista.push("#".repeat(i)+ "\n");
-//   }
-//   return lista;
-// }
-// alert(escada())
+  for(var i = 1; i <= altura; i++){
+    espaco = altura - i;
+    lista.push("#".repeat(i)+ "\n");
+  }
+  return lista;
+}
+alert(escada())
 
 
 // ######################### Desafio 02: Árvore Utópica ######################################
