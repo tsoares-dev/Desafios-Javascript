@@ -82,7 +82,14 @@ alert(escada())
 
 
 // ############################## Desafio 04: Produto ########################
-
 // Necessitamos uma função produto que receba um array de números e retorne o produto: o resultado de multiplicar todos os elementos entre si.
-
 // Por exemplo, produto([1, 4, 7]) deve retornar 28, que é 1 * 4 * 7.
+
+// function produto(arrayNumeros) {
+//   var resultado = 1;
+//   for (var i = 0; i < arrayNumeros.length; i++) {
+//     resultado *= arrayNumeros[i];
+//   }
+//   return resultado;
+// }
+// alert("A mulplicação de 1*4*7, dá o resultado de: " + produto([1, 4, 7])); // resultado: 28
